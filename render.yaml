@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: crypto-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: BINANCE_API_KEY
+        value: твій_ключ
+      - key: BINANCE_API_SECRET
+        value: твій_секрет
+      - key: TELEGRAM_TOKEN
+        value: твій_токен
+      - key: TELEGRAM_CHAT_ID
+        value: твій_ID
